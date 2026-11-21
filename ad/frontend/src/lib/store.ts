@@ -1,12 +1,22 @@
 import { DatabaseSync } from "node:sqlite";
 import { mkdirSync } from "node:fs";
 import { join } from "node:path";
+import { tmpdir } from "node:os";
 import { State } from "./types";
 import { seed } from "./domain";
+
 const globals = globalThis as unknown as { acadzaDb?: DatabaseSync };
+
+function getDbDir() {
+  if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME) {
+    return join(tmpdir(), ".demo");
+  }
+  return join(process.cwd(), ".demo");
+}
+
 function db() {
   if (!globals.acadzaDb) {
-    const dir = join(process.cwd(), ".demo");
+    const dir = getDbDir();
     mkdirSync(dir, { recursive: true });
     globals.acadzaDb = new DatabaseSync(join(dir, "admissions.sqlite"));
     globals.acadzaDb.exec(
