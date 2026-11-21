@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "targets": {
+    "/admissions/admission-queue": {
+      "targetKind": "existing-ui",
+      "projectId": "57ff31ee-1de1-405e-8b84-77d4a033fe17",
+      "activeDraftId": "532c3ad6-e9ad-420c-859b-568f84c89eb2",
+      "designSystemPath": ".superdesign/design-system.md",
+      "referenceIds": ["public-acadza-logo.svg"],
+      "brandAssets": {
+        "logo": {
+          "assetKey": "public-acadza-logo.svg",
+          "url": "https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/projects/57ff31ee-1de1-405e-8b84-77d4a033fe17/brand-assets/public-acadza-logo.svg/acadza-logo.svg",
+          "sourcePath": "public/acadza-logo.svg"
+        }
+      },
+      "contextFiles": [
+        ".superdesign/design-system.md",
+        "src/components/admissions-app.tsx",
+        "src/components/ui.tsx",
+        "src/components/operations.tsx:500:760",
+        "src/app/globals.css:189:750"
+      ],
+      "fingerprints": {
+        ".superdesign/design-system.md": "d3fc20465f0fd9d8fc683d3567536cfe4f3c13256dce0e78868a58f8c6dd8f1d",
+        "src/components/admissions-app.tsx": "39c1a4769a791db3bbe06c532f74c4edb1fb10c6d362be47b4359f8137d6229d",
+        "src/components/ui.tsx": "09280f3b81055721cdefb5e2bebb97d27b503cda0119f76f03943d637d1c5ae4",
+        "src/components/operations.tsx": "fbd4d293280952bf0b3397b76a48cef916454d540fa02387ebfef864ac8f1ff5",
+        "src/app/globals.css": "1e87c6cc24bf8a801c8b70bbcbe51875289ed835633f112f6a86ba98a1446234"
+      },
+      "components": [
+        {
+          "name": "AdmissionsShell",
+          "id": "aba7ce82-b994-4128-a952-a7a3e86158f4",
+          "sourcePath": "src/components/admissions-app.tsx",
+          "logoAssetKey": "public-acadza-logo.svg"
+        }
+      ],
+      "drafts": {
+        "532c3ad6-e9ad-420c-859b-568f84c89eb2": {
+          "title": "Acadza Admissions queue redesign",
+          "visualDirection": "Light editorial admissions workspace based on design-kit2",
+          "currentVersion": 1
+        }
+      },
+      "updatedAt": "2026-11-21T10:18:54+05:30"
+    }
+  }
+}

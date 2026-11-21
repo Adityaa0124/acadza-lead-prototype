@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+
+# Local database & demo data
+.demo/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Testing
+test-results/
+playwright-report/
+
+# Misc
+.superdesign/tmp/
+*.tsbuildinfo
+.env*.local
+
+# System & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

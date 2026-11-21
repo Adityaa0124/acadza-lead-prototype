@@ -1,0 +1,53 @@
+:root {
+  color-scheme: light;
+  --ac-bg: #f7f8fa;
+  --ac-surface: #ffffff;
+  --ac-surface-subtle: #f8fafc;
+  --ac-ink: #17233b;
+  --ac-muted: #526077;
+  --ac-text-subtle: #667085;
+  --ac-navy: #0d1b3c;
+  --ac-logo: #292d48;
+  --ac-border: #e2e7ef;
+  --ac-control-border: #8995a7;
+  --ac-primary: #1254ff;
+  --ac-primary-hover: #1048d9;
+  --ac-primary-strong: #0d3db8;
+  --ac-primary-soft: #e9effc;
+  --ac-on-primary: #ffffff;
+  --ac-accent: #dd570e;
+  --ac-accent-soft: #fff3dc;
+  --ac-attention: #854a0e;
+  --ac-attention-soft: #fff7e8;
+  --ac-danger: #b42318;
+  --ac-danger-soft: #fef3f2;
+  --ac-success: #166534;
+  --ac-success-soft: #ecfdf3;
+  --ac-disabled: #eef0f3;
+  --ac-disabled-ink: #737e90;
+  --ac-overlay: rgb(13 27 60 / 42%);
+  --ac-radius-sm: 6px;
+  --ac-radius-md: 8px;
+  --ac-radius-lg: 12px;
+  --ac-shadow-overlay: 0 12px 32px rgb(13 27 60 / 14%);
+  --ac-space-1: 4px;
+  --ac-space-2: 8px;
+  --ac-space-3: 12px;
+  --ac-space-4: 16px;
+  --ac-space-5: 20px;
+  --ac-space-6: 24px;
+  --ac-space-7: 32px;
+  --ac-space-8: 40px;
+  --ac-space-9: 48px;
+  --ac-control-height: 44px;
+  --ac-sidebar-width: 208px;
+  --ac-header-height: 64px;
+  --ac-font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ac-font-display: var(--ac-font-body);
+  --ac-focus: 0 0 0 2px var(--ac-surface), 0 0 0 4px var(--ac-primary);
+  --ac-motion-fast: 120ms;
+  --ac-motion-panel: 160ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --ac-motion-fast: 0ms; --ac-motion-panel: 0ms; }
+}
